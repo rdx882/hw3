@@ -1,7 +1,7 @@
 class EntriesController < ApplicationController
   
   def new
-    #renter Entries/new view with Entry form - purely HTML/front end
+    #renter Entries/new view with Entry form
   end
 
   def create    

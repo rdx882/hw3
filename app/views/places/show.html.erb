@@ -8,18 +8,18 @@
       <h3><%= @entry["title"] %></h3>
     </li>
     <li>
-      <%= @entry["occured_on"] %>
+      <%= @entry["occurred_on"] %>
     </li>
     <li>
       <p>
-        <%= @entry["occured_on"] %>
+        <%= @entry["occurred_on"] %>
       </p>
     </li>
     <hr>
   <% end %>
 </ul>
 
-<p><a href="/entries/new">Add a New Entry!</a></p>
+<p><a href="/entries/new?place_id=<%=@place.id%>">Add a New Entry!</a></p>
 
 <p><a href="/places/">Back to Places</a></p>
 
