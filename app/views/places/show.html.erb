@@ -4,8 +4,22 @@
 
 <ul>
   <% for entry in @entries %>
-  <li><%= @contact["phone_number"] %></li>
+    <li>
+      <h3><%= @entry["title"] %></h3>
+    </li>
+    <li>
+      <%= @entry["occured_on"] %>
+    </li>
+    <li>
+      <p>
+        <%= @entry["occured_on"] %>
+      </p>
+    </li>
+    <hr>
+  <% end %>
 </ul>
+
+<p><a href="/places/">Back to Places</a></p>
 
 <p><a href="/places/">Back to Places</a></p>
 
