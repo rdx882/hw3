@@ -5,15 +5,15 @@
 <ul>
   <% for entry in @entries %>
     <li>
-      <h3><%= @entry["title"] %></h3>
-    </li>
-    <li>
-      <%= @entry["occurred_on"] %>
-    </li>
-    <li>
-      <p>
-        <%= @entry["occurred_on"] %>
-      </p>
+      <h3><%= entry.title %></h3>
+    <ul>
+      <li>
+        <%= entry.occurred_on %>
+      </li>
+      <li>
+        <%= entry.description %>
+      </li>
+    </ul>
     </li>
     <hr>
   <% end %>
